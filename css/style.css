@@ -1,0 +1,156 @@
+body {
+	background-color: #fcdad2;
+}
+
+/*Меню сайта*/ 
+.top-menu {
+  margin: 0 40px;
+  position: relative;
+  background: #e0597c;    
+}
+.top-menu:before,
+.top-menu:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+}
+.top-menu:before {
+  top: 0;
+  border-bottom: 1px dashed #c4b9b9;
+}
+.top-menu:after {
+  bottom: 0;
+  border-top: 1px dashed #c4b9b9;
+}
+.menu-main {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+.menu-main li {
+  display: inline-block;
+  margin-right: -4px;
+}
+.menu-main a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px 30px;
+  font-family: 'PT Sans Caption', sans-serif;
+  color: white;
+  transition: .3s linear;
+}
+.menu-main a.current,
+.menu-main a:hover {
+  background: rgba(0,0,0,.2);
+}
+
+@media (max-width: 600px) {
+.top-menu {
+  margin: 0;
+}
+.menu-main li {
+  display: block;
+  margin-right: 0;
+}
+.menu-main a {
+  display: block;
+}
+}
+/*Конец меню сайта*/
+
+/*Заголовки*/
+body.specification h2 {
+  color: black;
+  font-size: 18px;
+  font-weight: 400;
+  background-color: #eaeaea;
+}
+
+/*Краткое описание товара*/
+body.specification .short {
+  color: #484343;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 16px;
+}
+
+/*Подробное описание товара*/
+body.specification .special {
+  color: #484343;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+/*Характеристика товара*/
+body.specification .products {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 55px;
+  color: #3b3b3b;
+
+}
+
+body.specification .products li div {
+margin-left: 5px;
+}
+
+body.specification .products li {
+  list-style: none;
+  background: url(../img/иконка.ico) no-repeat;
+  padding-left: 40px;
+  display: flex;
+}
+/*Конец характеристики товара*/
+
+a img {
+  border: 2px solid #e0597c; /*Рамка фото*/
+}
+/*Формы*/
+input, 
+textarea {
+  text-transform: capitalize;
+}
+.subform {
+  font-size: 1.2em;
+  color: #e0597c;
+  font-family:  Tahoma, Geneva, sans-serif;
+}
+.subform .label {
+  display: inline-block;
+  width: 200px;
+  vertical-align: top;
+  text-align: left;
+  margin-right: 10px;
+  font-weight: bold;
+}
+.subform input, .subform textarea {
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(255, 255, 255,.5);
+  color: #858585;
+  font-size: 22px;
+  box-shadow: inset 0 0 10px rgba(255, 255, 255,.75);
+  width: 500px;
+  padding: 5px;
+}
+.subform input:focus, .subform textarea:focus {
+  background-color: white;
+  color: black;
+  border: 1px solid white;
+}
+.subform input[type="submit"] {
+  margin-left: 345px;
+  padding: 10px 25px;
+  font-size: 1em;
+  color: white;
+  background: #fcdad2;
+  background: linear-gradient(to bottom, #e0597c 40%, #f59db3);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 4px #fcdad2;
+  width: 250px;
+}
